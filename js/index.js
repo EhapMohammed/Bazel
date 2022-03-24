@@ -1,16 +1,13 @@
-
-
-
-  var imgs = [];
-    var imgList = document.querySelectorAll(".img-item");
-    var lightBox = document.querySelector(".lightbox-container");
-    var close = document.getElementById("close");
-    var lightBoxImg = document.querySelector(".lightbox-img");
-var next =
-    document.getElementById("next");
-var prev =
+ var imgs = [],
+    imgList = document.querySelectorAll(".img-item"),
+    lightBox = document.querySelector(".lightbox"),
+    close = document.getElementById("close"),
+    lightBoxImg = document.querySelector(".lightbox-img"),
+    next =
+    document.getElementById("next"),
+    prev =
     document.getElementById("prev");
-var imgIndex = 0;
+     imgIndex = 0;
     for(var i =0 ; i<imgList.length ; i++)
     {
         imgs.push(imgList[i]);
@@ -81,13 +78,13 @@ $(document).ready(function()
 
 
 //User Name RegEx
-var userName = document.querySelector("#userName input");
-var userRegEx = /^[A-z]{1}[a-z]{2,8} [A-z]{1}[a-z]{2,8}$/;
-var alert = document.querySelector("#userName .alert");
-var userValue = userName.value;
+
 
 userName.addEventListener("blur",function(){
-
+    var userName = document.querySelector("#userName input");
+    var userRegEx = /^[A-Z]{1}[a-z]{2,8} [A-Z]{1}[a-z]{2,8}$/;
+    var alert = document.querySelector("#userName .alert");
+    var userValue = userName.value;
     if(userRegEx.test(userValue) == false)
         {
             alert.style.display= "block";
@@ -101,13 +98,12 @@ userName.addEventListener("blur",function(){
 
 // User Mail RegEx
 
-var userMail = document.querySelector("#userMail input");
-var userRegExMail = /^[A-z][a-z]{2,7}[.-]?[A-z][a-z]{2,7}@[a-z]{2,7}\.[a-z]{2,5}$/;
-var alertMail = document.querySelector("#userMail .alert");
-var userMailValue = userMail.value;
 
 userMail.addEventListener("blur",function(){
-
+    var userMail = document.querySelector("#userMail input");
+    var userRegExMail = /^[A-Z][a-z]{2,7}[.-]?[A-Z][a-z]{2,7}@[a-z]{2,7}\.[a-z]{2,5}$/;
+    var alertMail = document.querySelector("#userMail .alert");
+    var userMailValue = userMail.value;
     if(userRegExMail.test(userMailValue) == false)
         {
             alertMail.style.display= "block";
@@ -120,13 +116,13 @@ userMail.addEventListener("blur",function(){
 
 //User Phone Number Regex
 
-var userNumber = document.querySelector("#userNumber input");
-var userRegExNumber = /^(002)?01(0|1|2|5)[0-9]{8}$/;
-var alertNumber = document.querySelector("#userNumber .alert");
-var userNumberValue = userNumber.value;
+
 
 userNumber.addEventListener("blur",function(){
-
+    var userNumber = document.querySelector("#userNumber input");
+    var userRegExNumber = /^(002)?01(0|1|2|5)[0-9]{8}$/;
+    var alertNumber = document.querySelector("#userNumber .alert");
+    var userNumberValue = userNumber.value;
     if(userRegExNumber.test(userNumberValue) == false)
         {
             alertNumber.style.display= "block";
@@ -140,13 +136,13 @@ userNumber.addEventListener("blur",function(){
 //User Masseg Regex
 
 
-var userMassege = document.querySelector("#userMassege textarea");
-var userRegExMassege = /^[A-Z][a-z][0-9]{0-99}$/;
-var alertMassege = document.querySelector("#userMassege textarea");
-var userMassegeValue = userMassege.value;
+
 
 userMassege.addEventListener("blur",function(){
-
+    var userMassege = document.querySelector("#userMassege textarea");
+    var userRegExMassege = /^[A-Z][a-z][0-9]{0-99}$/;
+    var alertMassege = document.querySelector("#userMassege textarea");
+    var userMassegeValue = userMassege.value;
     if(userRegExMassege.test(userMassegeValue) == false)
         {
             alertMassege.style.display= "block";
