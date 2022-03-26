@@ -6,6 +6,10 @@ html
     -webkit-box-sizing: border-box;
     transition: all 1s ease-in-out !important;
 }
+/* body
+{
+    min-height: 5000px;
+} */
 #readyPage
 {
     background-color: cadetblue;
@@ -61,13 +65,13 @@ html
 }
 .navbar-container
 {
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
     position: sticky;
     top: 0%;
     z-index: 999;
     background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 .navbar-nav
 {
@@ -153,7 +157,7 @@ p
     }
 }
 
-/* what we do */
+/* services*/
 .we-do-p
 {
     font: normal bold 100%/150% 'Ubuntu', sans-serif !important;
@@ -161,6 +165,10 @@ p
 @media (max-width :768px ){
 .do-container{
     text-align: center;
+}
+.services h5
+{
+    font-size: 14px !important;
 }
 }
 /* prices */
@@ -286,10 +294,23 @@ p
         top: 10px;
     }
     }
+
+    /* Happy customers */
+
+.Happy
+{
+    background-color: #f4f4f4;    
+ }
 .mycolor
 {
-    background-color: blueviolet !important;
+    background-color: #100f0f !important;
 }
+@media (max-width :768px) {
+.carousel-control-next, .carousel-control-prev {
+    top: -90px;
+}
+}
+
 /* google map style */
 .mapouter
 {
